@@ -1,3 +1,7 @@
+.PHONY: clean
+clean:
+	cargo clean
+
 .PHONY: test
 test:
 	cargo test
@@ -8,4 +12,5 @@ bulid: test
 
 .PHONY: run
 run: build
-	cargo run <"./01.txt"
+	cargo run <"./01-part_one.txt"
+	cargo run <"./01-part_two.txt"
