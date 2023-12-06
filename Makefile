@@ -20,5 +20,5 @@ run-01: build
 
 .PHONY: run-02
 run-02: build
-	cargo run "02" <"./02-part_one.txt"
-	cargo run "02" <"./02-part_two.txt"
+	cargo run "02" "part-one" <"./02.txt"
+	cargo run "02" "part-two" <"./02.txt"

@@ -7,7 +7,7 @@ mod solve_01;
 use solve_01::solve_01;
 
 mod solve_02;
-use solve_02::solve_02;
+use solve_02::{solve_02_part_one, solve_02_part_two};
 
 
 fn main() {
@@ -24,8 +24,12 @@ fn main() {
             solve_01(lines);
         }
 
-        ["02"] => {
-            solve_02(lines);
+        ["02", "part-one"] => {
+            solve_02_part_one(lines);
+        }
+
+        ["02", "part-two"] => {
+            solve_02_part_two(lines);
         }
 
         other => {
