@@ -11,6 +11,14 @@ bulid: test
 	cargo build
 
 .PHONY: run
-run: build
-	cargo run <"./01-part_one.txt"
-	cargo run <"./01-part_two.txt"
+run: run-01 run-02
+
+.PHONY: run-01
+run-01: build
+	cargo run "01" <"./01-part_one.txt"
+	cargo run "01" <"./01-part_two.txt"
+
+.PHONY: run-02
+run-02: build
+	cargo run "02" <"./02-part_one.txt"
+	cargo run "02" <"./02-part_two.txt"
